@@ -1,3 +1,4 @@
+#https://ascii.co.uk/art
 print('''
 *******************************************************************************
           |                   |                  |                     |
@@ -22,3 +23,16 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 ''')
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
+direction = input("You're at a cross road. Where do you want to go ? Type left or right: ")
+if direction.lower() != "left":
+    print("You fell into a hole. Game Over")
+else:
+    option_2 = input("You've come to a lake. There is an island in the middle of the lake. Type 'wait' to wait for a boat. Type 'swim' to swim across: ") 
+    if option_2.lower() != "wait":
+        print("You fell into a hole. Game Over")
+    else:
+        color_door = input("You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which colour do you choose? ")
+        if color_door.lower() != "yellow":
+            print("You fell into a hole. Game Over")
+        else:
+            print("You Win !!!!!!!!")
